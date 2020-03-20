@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- /**
+ * @category   Bhaveshpp
+ * @package    Bhaveshpp_Blogpost
+ * @author     https://github.com/bhaveshpp/
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */ -->
+<schema xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='urn:magento:framework:Setup/Declaration/Schema/etc/schema.xml'>
+    <table name="blogpost" resource="default" engine="innodb" comment="module-bhaveshpp-blogpost">
+        <column name="post_id" xsi:type="int" padding="11" identity="true" nullable="false" unsigned="false" comment="Post Id"/>
+        <column name="post_status" xsi:type="int" padding="11" nullable="false" comment="Post Status"/>
+        <column name="post_title" xsi:type="varchar" nullable="false" length="225" comment="Post Title"/>
+        <column name="post_sub_title" xsi:type="varchar" nullable="false" length="225" comment="Post Sub Title"/>
+        <column name="post_image" xsi:type="varchar" nullable="false" length="225" comment="Post Image"/>
+        <column name="post_sort_discription" xsi:type="text" nullable="false" comment="Post Sort Discription"/>
+        <column name="post_full_discription" xsi:type="text" nullable="false" comment="Post Full Discription"/>
+        <column name="post_author_name" xsi:type="varchar" nullable="false" length="225" comment="Post Author"/>
+        <column name="post_view_count" xsi:type="varchar" nullable="false" length="225" comment="Post View Count"/>
+        <column name="post_share_count" xsi:type="varchar" nullable="false" length="225" comment="Post Share Count"/>
+        <column name="post_create_time" xsi:type="datetime" nullable="false" comment="Post Create Time"/>
+        <column name="post_update_time" xsi:type="timestamp" nullable="false" comment="Post Update Time"/>
+        <constraint referenceId="PRIMARY" xsi:type="primary">
+            <column name="post_id"/>
+        </constraint>
+    </table>
+</schema>

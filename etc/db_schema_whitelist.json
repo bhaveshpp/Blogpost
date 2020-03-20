@@ -1,0 +1,20 @@
+{
+    "blogpost": {
+        "column": {
+            "post_id": true,
+            "post_title": true,
+            "post_sub_title": true,
+            "post_image": true,
+            "post_sort_discription": true,
+            "post_full_discription": true,
+            "post_author_name": true,
+            "post_view_count": true,
+            "post_share_count": true,
+            "post_create_time": true,
+            "post_update_time": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
